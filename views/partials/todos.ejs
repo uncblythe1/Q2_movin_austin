@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Moving Checklist</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="supplies.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Supply</label><input id="new-supply" type="text"><button>Add</button>
+      </p>
+      
+      <h3>Supplies Needed</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Tape</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li class="editMode"><input type="checkbox"><label>Boxes</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+      </ul>
+      
+      <h3>Supplies Bought</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>Truck</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>

@@ -7,7 +7,7 @@ router.get('/moving_companies', (req, res, next) => {
   knex('moving_companies')
     .orderBy('company_id')
     .then((companies) => {
-        res.render('truck_rentals', {companies});
+        res.render('moving_companies', {companies});
     })
     .catch((err) => {
       res.status(500).json({

@@ -22,8 +22,10 @@ app.set('view engine', 'ejs');
 
 let truckRentals = require('./routes/truck_rentals');
 let movingCompanies = require('./routes/moving_companies');
+let supplies = require('./routes/supplies');
 app.use(truckRentals);
 app.use(movingCompanies);
+app.use(supplies);
 
 
 app.get('/', (req, res) => {
