@@ -9,10 +9,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
-
-// const yelp = new Yelp({ apiKey: process.env.YELP_API_KEY })
-
-
 app.disable('x-powered-by');
 
 app.use(bodyParser.json());
@@ -25,7 +21,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 let truckRentals = require('./routes/truck_rentals');
+let movingCompanies = require('./routes/moving_companies');
 app.use(truckRentals);
+app.use(movingCompanies);
 
 
 app.get('/', (req, res) => {
@@ -34,7 +32,6 @@ app.get('/', (req, res) => {
 
 app.get('/home', (req, res) => {
     res.render('home');
-    
 })
 
 
