@@ -21,6 +21,9 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "knex": "^0.15.2",
-    "pg": "^7.4.3"
+    "method-override": "^3.0.0",
+    "pg": "^7.4.3",
+    "rapidapi-connect": "0.0.6",
+    "yelp-api": "^1.0.3"
   }
 }
