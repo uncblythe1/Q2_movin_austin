@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     background-color: #607a8b;
+    align-content: center;
     color: white;
     padding-top: 20px;
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.267);
@@ -10,20 +11,27 @@
 
 #map-container {
     height: 240px;
-    width: 100%;
-    margin-top: 0px;
+    width: 900px;
+    margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 250px;
 }
 
 #myFooter .row {
-    margin: 0 85px;
     background:#7f7f7f;
     background:rgba(255, 255, 255, 0.527);
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.267);
     text-align: center;
     align-content: center;
+    border-radius: 10%;
+    height: 200px;
+    width: 900px;
+    margin-left: 250px;
 }
 .col-sm-3 {
-    padding-left: 210px;
+    margin-left: 30px;
+    margin-right: -70px;
+    width: 33%;
 }
 
 #myFooter .footer-copyright {

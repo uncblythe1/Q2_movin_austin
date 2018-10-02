@@ -274,11 +274,4 @@ a {
     display: block;
 }
 
-
-.imgHolder{
-    background-image: url('bgstripes.png');
-    background-position: center;
-    background-size: cover;
-    opacity: 0.9;
-  }
  
