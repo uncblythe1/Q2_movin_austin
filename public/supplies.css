@@ -6,7 +6,9 @@ body {
   .container {
     display: block;
     width: 400px;
-    margin: 100px auto 0;
+    margin-top: -20px;
+    background:#7f7f7f;
+    background:rgba(255, 255, 255, 0.712);
   }
   ul {
     margin: 0;
@@ -117,3 +119,4 @@ body {
   ul li.editMode label {
     display:none;
   }
+

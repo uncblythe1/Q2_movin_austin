@@ -14,7 +14,8 @@
     <script type = "text/javascript" src="https://storage.googleapis.com/code-snippets/rapidapi.min.js"></script>
     <meta http-equiv="content-type" content="application/json; charset=UTF-8">
 </head>
-<body id="home">
+
+<body>
         
         <% include partials/header.ejs %>  
     
@@ -35,6 +36,9 @@
                     <% trucks.forEach(function(truck) { %>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
+                                    <a class="lightbox" href='<%= truck.logo %>'>
+                                        <img src='<%= truck.logo %>' alt="Card Image" class="card-img-top">
+                                    </a>
                                     <div class="card-body">
                                         <h6 style= "font-weight: bold; font-size: 25px;"><%= truck.name %></h6>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">ADDRESS:</span><span class="text-muted card-text"> <%= truck.address %></span></p>
@@ -53,5 +57,6 @@
                   <script>
                       baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
                 </script>
-                <% include partials/footer.ejs %>
               </body>
+              <% include partials/footer.ejs %>
+        

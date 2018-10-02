@@ -35,6 +35,9 @@
                     <% companies.forEach(function(company) { %>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card border-0 transform-on-hover">
+                                    <a class="lightbox" href='<%= company.logo %>'>
+                                        <img src='<%= company.logo %>' alt="Card Image" class="card-img-top">
+                                              </a>
                                     <div class="card-body">
                                         <h6 style= "font-weight: bold; font-size: 25px;"><%= company.name %></h6>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">ADDRESS:</span><span class="text-muted card-text"> <%= company.address %></span></p>

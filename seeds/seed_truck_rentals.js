@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
         return knex('truck_rentals').insert([
           {
             "name": "U-Haul Moving & Storage at Ben White",
-            "logo": "https://goo.gl/LCquZj",
+            "logo": "https://charleston.com/media/com_jbusinessdirectory/pictures/companies/0/uhaul01-1483480915.jpg",
             "address": "304 E Ben White Blvd, Austin, TX 78704",
             "phone": "(512) 447-9875",
             "website": "www.uhaul.com",
@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
           },
           {
             "name": " A Plus Texas Movers",
-            "logo": "https://goo.gl/LCquZj",
+            "logo": "https://www.valueautorental.com/wp-content/images/truck.png",
             "address": "5214 Rogers Ln, Austin, TX 78724",
             "phone": "(512) 865-7956",
             "website": "www.movingaustintexas.com",
@@ -25,7 +25,7 @@ exports.seed = function(knex, Promise) {
           },
           {
             "name": "Penske Truck Rental",
-            "logo": "https://goo.gl/LCquZj",
+            "logo": "https://www.pensketruckrental.com/imgs/trucks-large/img_rental_16economyvan.jpg",
             "address": "12633 Research Blvd, Austin, TX 78759",
             "phone": "(512) 335-7639",
             "website": "www.pensketruckrental.com",
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           },
           {
             "name": "Capps Van & Car Rental",
-            "logo": "https://goo.gl/LCquZj",
+            "logo": "http://www.cappsvanrental.com/assets/images/locationImages/HSP.jpg",
             "address": "4300 Airport Blvd, Austin, TX 78722",
             "phone": "(512) 323-0003",
             "website": "www.cappsvanrental.com",
@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
           },
           {
             "name": "Life Storage",
-            "logo": "https://goo.gl/LCquZj",
+            "logo": "https://www.lifestorage.com/assets/img/storephotos/life-storage-369-4-moving-truck-04122018-med.jpg",
             "address": "9706 Manchaca Rd, Austin, TX 78748",
             "phone": "(866) 838-2192",
             "website": "www.lifestorage.com",

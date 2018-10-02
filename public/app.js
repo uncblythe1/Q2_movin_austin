@@ -1,6 +1,6 @@
 
 
-let Input=document.getElementById("new-task");//Add a new task.
+let taskInput=document.getElementById("new-task");//Add a new task.
 let addButton=document.getElementsByTagName("button")[0];//first button
 let incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
 let completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
@@ -87,7 +87,6 @@ let taskCompleted=function(){
 
 
 let taskIncomplete=function(){
-		console.log("Incomplete Task...");
 //Mark task as incomplete.
 	//When the checkbox is unchecked
 		//Append the task list item to the #incomplete-tasks.
@@ -99,7 +98,6 @@ let taskIncomplete=function(){
 
 
 let ajaxRequest=function(){
-	console.log("AJAX Request");
 }
 
 //The glue to hold it all together.
@@ -112,7 +110,6 @@ addButton.addEventListener("click",ajaxRequest);
 
 
 let bindTaskEvents=function(taskListItem,checkBoxEventHandler){
-	console.log("bind list item events");
 //select ListItems children
 	let checkBox=taskListItem.querySelector("input[type=checkbox]");
 	let editButton=taskListItem.querySelector("button.edit");
@@ -143,6 +140,3 @@ let bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	//bind events to list items chldren(tasksIncompleted)
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 	}
-
-
-document.getElementById('slogan').fadeIn('slow');

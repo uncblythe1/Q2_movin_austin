@@ -1,4 +1,7 @@
 #myFooter {
+    background-image: url('bgstripes.png');
+    background-position: center;
+    background-size: cover;
     background-color: #607a8b;
     color: white;
     padding-top: 20px;
@@ -14,6 +17,13 @@
 
 #myFooter .row {
     margin: 0 85px;
+    background:#7f7f7f;
+    background:rgba(255, 255, 255, 0.527);
+    text-align: center;
+    align-content: center;
+}
+.col-sm-3 {
+    padding-left: 210px;
 }
 
 #myFooter .footer-copyright {
@@ -41,13 +51,13 @@
 #myFooter h5 {
     font-size: 25px;
     font-family: 'Dosis', sans-serif;
-    color: white;
+    color: rgb(23, 45, 59);
     font-weight: bold;
     margin-top: 30px;
 }
 
 #myFooter a {
-    color: #d2d1d1;
+    color: #0b1a27;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -56,7 +66,7 @@
 #myFooter a:hover,
 #myFooter a:focus {
     text-decoration: none;
-    color: white;
+    color: rgb(36, 49, 71);
 }
 
 #myFooter .social-networks {
