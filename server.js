@@ -28,7 +28,7 @@ app.use(movingCompanies);
 app.use(supplies);
 
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('home');
 })
 
