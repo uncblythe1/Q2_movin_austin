@@ -9,12 +9,14 @@
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.267);
 }
 
+#myFooter .container {
+    align-content: center;
+}
+
 #map-container {
     height: 240px;
     width: 900px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 #myFooter .row {
@@ -24,12 +26,9 @@
     text-align: center;
     align-content: center;
     border-radius: 10%;
-    height: 200px;
-    width: 900px;
-    margin-left: 250px;
 }
 .col-sm-3 {
-    margin-left: 30px;
+    margin-left: 100px;
     margin-right: -70px;
     width: 33%;
 }
@@ -46,9 +45,7 @@
     color: #ccc;
 }
 
-#myFooter .container {
-    width: auto;
-}
+
 
 #myFooter ul {
     list-style-type: none;

@@ -33,8 +33,6 @@ let createNewTaskElement=function(taskString){
 	return listItem;
 }
 
-
-
 let addTask=function(){
 	
 	let listItem=createNewTaskElement(taskInput.value);
@@ -140,3 +138,5 @@ let bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	//bind events to list items chldren(tasksIncompleted)
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 	}
+
+	

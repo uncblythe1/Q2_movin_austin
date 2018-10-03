@@ -1,0 +1,71 @@
+<% include ../partials/header.ejs %>
+  <body class="bg-div">
+
+    <form class='form-horizontal' action='/update_rentals/<%=trucks[0].rental_id %>?_method=patch' method = "POST">
+        <fieldset id='form-field'>
+        
+        
+        <legend id= "newCompanyFormTitle">Update Company</legend>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="logo">Logo</label>  
+          <div class="col-md-4">
+          <input id="logo" name="logo" required= "true" value = "<%= trucks[0].logo %>" type="text" placeholder="Enter Logo URL" class="form-control input-md">
+          </div>
+        </div>
+
+        <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Company Name</label>  
+                <div class="col-md-4">
+                <input id="name" name="name" required= "true" type="text" value = "<%= trucks[0].name %>"placeholder="Enter Company Name" class="form-control input-md">  
+                </div>
+              </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="address">Address</label>  
+          <div class="col-md-4">
+          <input id="address" name="address" required= "true" type="text" value = "<%= trucks[0].address %>"placeholder="Enter Address" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="phone">Phone</label>  
+          <div class="col-md-4">
+          <input id="phone" name="phone" type="text" required= "true" value = "<%= trucks[0].phone %>"placeholder="Enter Phone Number" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="website">Website</label>  
+          <div class="col-md-4">
+          <input id="website" name="website" required= "true" type="text" value = "<%= trucks[0].website %>"placeholder="Enter Website URL" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="yelpRating">Yelp Rating</label>  
+          <div class="col-md-4">
+          <input id="yelpRating" name="yelpRating" required= "true" type="text" value = "<%= trucks[0].yelpRating %>" placeholder="Enter Yelp Rating" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="yelpReviews">Yelp Reviews</label>  
+          <div class="col-md-4">
+          <input id="yelpReviews" name="yelpReviews" required= "true" type="text" value = "<%= trucks[0].yelpReviews %>"placeholder="Enter Yelp Review" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="updateCompanies"></label>
+          <div class="col-md-4">
+                <button type="submit" class="form-submit" >Save</button>
+          </div>
+        </div>
+        
+        </fieldset>
+    </form>
+  </body>
+
+
+</html>

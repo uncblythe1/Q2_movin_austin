@@ -1,0 +1,84 @@
+<% include ../partials/header.ejs %>
+<body class="bg-div">
+    
+
+<form class="form-horizontal" action="/assassins" method = "POST">
+        <fieldset id='form-field'>
+        <legend id= "newAssassinFormTitle">New Assassin</legend>
+        
+        <div class="form-group">
+                <label class="col-md-4 control-label" for="photo">Photo</label>  
+                <div class="col-md-4">
+                <input id="photo" name="photo" type="text" placeholder="Enter Photo URL" class="form-control input-md">
+                </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="full_name">Full Name</label>  
+          <div class="col-md-4">
+          <input id="full_name" name="full_name" required= "true" type="text" placeholder="Enter Name" class="form-control input-md">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="code_names">Code Names</label>  
+          <div class="col-md-4">
+          <input id="code_names" name="code_names" required= "true" type="text" placeholder="Enter Code Names" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="weapon">Weapon</label>  
+          <div class="col-md-4">
+          <input id="weapon" name="weapon" type="text" required= "true" placeholder="Hands/Ninja Stars..." class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="contact_info">Contact Info</label>  
+          <div class="col-md-4">
+          <input id="contact_info" name="contact_info" required= "true" type="text" placeholder="Fake info only please..." class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="age">Age</label>  
+          <div class="col-md-4">
+          <input id="age" name="age" required= "true" type="text" placeholder="Enter Age" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="price">Minimum Price</label>  
+          <div class="col-md-4">
+          <input id="price" name="price" required= "true" type="text" placeholder="Enter Minimum Price" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="rating">Rating</label>  
+          <div class="col-md-4">
+          <input id="rating" name="rating" required= "true" type="text" placeholder="Enter Rating" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="kills">No. of Kills</label>  
+          <div class="col-md-4">
+          <input id="kills" name="kills" type="text" required= "true" placeholder="Enter Number of Kills" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="newassassin"></label>
+          <div class="col-md-4">
+                <button type="submit" class="form-submit" >Submit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+    </body>
+
+
+</html>

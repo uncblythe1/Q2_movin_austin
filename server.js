@@ -23,6 +23,9 @@ app.set('view engine', 'ejs');
 let truckRentals = require('./routes/truck_rentals');
 let movingCompanies = require('./routes/moving_companies');
 let supplies = require('./routes/supplies');
+let users = require('./routes/users');
+
+app.use(users);
 app.use(truckRentals);
 app.use(movingCompanies);
 app.use(supplies);
@@ -30,6 +33,10 @@ app.use(supplies);
 
 app.get('/', (req, res) => {
     res.render('home');
+})
+
+app.get('/admin', (req, res) => {
+    res.render('adminViews/admin');
 })
 
 
