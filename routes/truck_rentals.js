@@ -2,6 +2,14 @@ const express = require('express');
 const router = express.Router();
 const knex = require('../db/knex');
 
+router.get('/yelpRating', (req, res, next) => {
+  knex('truck_rentals')
+  .orderBy('yelpRating')
+  .then((trucks) => {
+    res.render("userViews/truck_rentals", {trucks})
+  })
+})
+
 router.get('/new_rental', (req, res, next) => {
   res.render('adminViews/new_rental');
 });

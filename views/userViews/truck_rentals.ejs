@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Truck Rentals Page</title>
-    <script type = "module" src="../app.js" charset="utf-8"></script>
-    <script type = "text/javascript" src="https://storage.googleapis.com/code-snippets/rapidapi.min.js"></script>
-    <meta http-equiv="content-type" content="application/json; charset=UTF-8">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Permanent+Marker" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Moving Companies Page</title>
+        <script type = "module" src="../app.js" charset="utf-8"></script>
+        <script type = "text/javascript" src="https://storage.googleapis.com/code-snippets/rapidapi.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <meta http-equiv="content-type" content="application/json; charset=UTF-8">
 </head>
 <div id="wrapper">
 <body>
@@ -23,7 +23,7 @@
                   <div class="dropdown" style = "margin-left: 80%; margin-top: -5%; display: inline-block">
               <button class="dropbtn">Sort</button>
                   <div class="dropdown-content">
-                    <a href="/yelp_rating">Yelp Rating</a>
+                    <a href="/yelpRating">Yelp Rating</a>
                   </div>
                 </div>
                   </p> 
@@ -43,7 +43,7 @@
                                         <h6 style= "font-weight: bold; font-size: 25px;"><%= truck.name %></h6>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">ADDRESS:</span><span class="text-muted card-text"> <%= truck.address %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">PHONE:</span><span class="text-muted card-text">  <%= truck.phone %></span></p>
-                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href='<%= truck.website %>'>   <%= truck.website %></a></span></p>
+                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href='https://<%= truck.website %>'>   <%= truck.website %></a></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP RATING:</span><span class="text-muted card-text">  <%= truck.yelpRating %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP REVIEWS:</span><span class="text-muted card-text">  <%= truck.yelpReviews %></span></p>
                                     </div>

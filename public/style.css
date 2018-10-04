@@ -65,7 +65,7 @@ a {
     background-color: white;
     position: relative;
     width:100%;
-    height:100px;
+    height: 120px;
     align-content: center;
     margin-top: -10px;
     margin-bottom: 50px;
@@ -176,12 +176,13 @@ a {
 }
 
 .gallery-block{
-    margin-top: -100px;
+    margin-top: -50px;
     padding-bottom: 60px;
     padding-top: 60px;
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     margin-bottom: -200px;
+    background-color: #92b2c74f
   }
   
   .gallery-block .heading{
@@ -193,6 +194,7 @@ a {
       font-weight: bold;
       font-size: 25px;
       text-transform: uppercase;
+      text-align: center;
   }
   
   .gallery-block.cards-gallery h6 {
@@ -242,11 +244,14 @@ a {
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     display: block;
+    margin-top: 50px;
+    margin-right: 200px;
 }
 
 .dropbtn {
     border-radius: 100%;
     width: 100px;
+    margin-top: 100px;
 }
 
 .dropdown-content {
@@ -274,4 +279,52 @@ a {
 
 #delete {
     border-radius: 100%;
+}
+
+#newCompanyBtn {
+    width: 100px;
+    height: 60px;
+    background: white;                                                                                                                                                                           
+    border: rgb(104, 129, 138) solid 1px;
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 80%;
+    margin-left: 200px;
+    margin-right: -200px;
+    margin-bottom: 20px;
+}
+
+#form-field {
+    margin-top: -10px;
+    font-family: 'Dosis', sans-serif;
+    background: #f7f4f4;
+}
+
+form.form-horizontal {
+    margin-top: 30px;
+    background: #f7f4f4;
+}
+
+.col-md-4.control-label {
+    font-size: 20px;
+}
+
+#newCompanyFormTitle {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.form-submit {
+    width: 100px;
+    height: 50px;
+    background: white;                                                                                                                                                                           
+    border: rgb(104, 129, 138) solid 1px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 80%;
 }

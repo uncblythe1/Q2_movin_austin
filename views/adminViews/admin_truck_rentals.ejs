@@ -18,21 +18,15 @@
 <body>
         
         <% include ../partials/header.ejs %>  
-    
-        <p style = "margin-top: 2%"> 
+
                 <a href="/new_rental">
-                    <span style = "margin-right: 20%; margin-left:20%" id= 'newCompanyBtn' >New Company</span>
+                    <span style = "display: margin-left=100px;" id= 'newCompanyBtn' >New Company</span>
                 </a>
-                  <div class="dropdown" style = "margin-left: 80%; margin-top: -5%; display: inline-block">
-              <button class="dropbtn">Sort</button>
-                  <div class="dropdown-content">
-                    <a href="/yelp_rating">Yelp Rating</a>
-                  </div>
-                </div>
                   </p> 
                  <section class="gallery-block cards-gallery">
                     <div class="container">
                         <div class="heading">
+
                           <h2>Truck Rentals</h2>
                         </div>
                         <div id = "bg-div2" class="row">
@@ -46,11 +40,11 @@
                                         <h6 style= "font-weight: bold; font-size: 25px;"><%= truck.name %></h6>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">ADDRESS:</span><span class="text-muted card-text"> <%= truck.address %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">PHONE:</span><span class="text-muted card-text">  <%= truck.phone %></span></p>
-                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href='<%= truck.website %>'>   <%= truck.website %></a></span></p>
+                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href="http://<%= truck.website %>"><%= truck.website %></a></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP RATING:</span><span class="text-muted card-text">  <%= truck.yelpRating %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP REVIEWS:</span><span class="text-muted card-text">  <%= truck.yelpReviews %></span></p>
-                            <a href="/admin_rentals/<%=truck.rental_id %>"><button id= 'editTruck'>Edit</button></a>
-                            <form action ="/truck_rentals/<%= truck.rental_id %>?_method=delete" method="POST" style="display:inline-block"> <button id= 'deleteTruck'>Delete</button></form> 
+                            <a href="/admin_rentals/<%=truck.rental_id %>"><button id= 'edit'>Edit</button></a>
+                            <form action ="/truck_rentals/<%= truck.rental_id %>?_method=delete" method="POST" style="display:inline-block"> <button id= 'delete'>Delete</button></form> 
                                     </div>
                                 </div>
                             </div>

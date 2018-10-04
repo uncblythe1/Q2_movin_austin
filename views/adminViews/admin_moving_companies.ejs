@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,16 +19,9 @@
         
         <% include ../partials/header.ejs %>  
     
-        <p style = "margin-top: 2%"> 
                 <a href="/new_company">
-                    <span style = "margin-right: 20%; margin-left:20%" id= 'newCompanyBtn' >New Company</span>
+                    <span id= 'newCompanyBtn' >New Company</span>
                 </a>
-                  <div class="dropdown" style = "margin-left: 80%; margin-top: -5%; display: inline-block">
-              <button class="dropbtn">Sort</button>
-                  <div class="dropdown-content">
-                    <a href="/yelp_rating">Yelp Rating</a>
-                  </div>
-                </div>
                   </p> 
                  <section class="gallery-block cards-gallery">
                     <div class="container">
@@ -48,7 +39,7 @@
                                         <h6 style= "font-weight: bold; font-size: 25px;"><%= company.name %></h6>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">ADDRESS:</span><span class="text-muted card-text"> <%= company.address %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">PHONE:</span><span class="text-muted card-text">  <%= company.phone %></span></p>
-                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href="http://<%= company.website %>">   <%= company.website %></a></span></p>
+                            <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href="http://<%= company.website %>"><%= company.website %></a></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP RATING:</span><span class="text-muted card-text">  <%= company.yelpRating %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP REVIEWS:</span><span class="text-muted card-text">  <%= company.yelpReviews %></span></p>
                             <a href="/admin_companies/<%= company.company_id %>"><button id= 'edit'>Edit</button></a>

@@ -26,7 +26,7 @@ body {
 
   .list {
     background-color: rgba(221, 221, 221, 0.507);
-    border: 5px dotted rgba(161, 154, 154, 0.103);
+    border: 5px solid rgba(161, 154, 154, 0.103);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
     font-family: 'Permanent Marker', cursive;
     display: inline-block;

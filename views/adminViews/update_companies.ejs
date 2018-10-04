@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Company Page</title>
+    <script type = "module" src="../app.js" charset="utf-8"></script>
+    <script type = "application/" src="https://storage.googleapis.com/code-snippets/rapidapi.min.js"></script>
+    <meta http-equiv="content-type" content="application/json; charset=UTF-8">
+</head>
+
 <% include ../partials/header.ejs %>
   <body class="bg-div">
 
@@ -5,12 +22,12 @@
         <fieldset id='form-field'>
         
         
-        <legend id= "newCompanyFormTitle">Update Company</legend>
+        <legend style = "margin-left: 30%; border-bottom: none" id= "newCompanyFormTitle">Update Company</legend>
         
         <div class="form-group">
           <label class="col-md-4 control-label" for="logo">Logo</label>  
           <div class="col-md-4">
-          <input id="logo" name="logo" required= "true" value = "<%= companies[0].logo %>" type="text" placeholder="Enter Logo URL" class="form-control input-md">
+          <input id="newlogo" name="logo" required= "true" value = "<%= companies[0].logo %>" type="text" placeholder="Enter Logo URL" class="form-control input-md">
           </div>
         </div>
 

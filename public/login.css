@@ -26,10 +26,6 @@
     z-index:100;
 }
 
-#nav {
-    margin-left: 30%;
-}
-
 
 #navLinks form{
     display: inline-block;
@@ -37,6 +33,21 @@
     font-size: 25px;
     color: rgba(0, 0, 0, 0.616);
     display: inline-block;
+    width: 550px;
+}
+
+#navlinks button {
+    width: 400px;
+    height: 400px;
+    border: rgb(104, 129, 138) solid 10px;
+    float: left;
+    margin-right: 150px;
+    margin-left: 220px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.267);
+    border-radius: 80%;
 }
 
 
