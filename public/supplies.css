@@ -10,6 +10,7 @@ body {
  
   .container {
     border-top: #333 10px solid;
+    border-bottom: #333 10px solid;
     font-family: 'Dosis', sans-serif;
     width: 500px;
     margin-top: 20px;

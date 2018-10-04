@@ -49,7 +49,7 @@
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">WEBSITE:</span><span class="text-muted card-text"><a href='<%= truck.website %>'>   <%= truck.website %></a></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP RATING:</span><span class="text-muted card-text">  <%= truck.yelpRating %></span></p>
                             <p style= "text-align: left"><span style= "font-weight: bold; font-size: 16px;">YELP REVIEWS:</span><span class="text-muted card-text">  <%= truck.yelpReviews %></span></p>
-                            <a href="/update_truck_rentals/<%=truck.rental_id %>"><button id= 'editTruck'>Edit</button></a>
+                            <a href="/admin_rentals/<%=truck.rental_id %>"><button id= 'editTruck'>Edit</button></a>
                             <form action ="/truck_rentals/<%= truck.rental_id %>?_method=delete" method="POST" style="display:inline-block"> <button id= 'deleteTruck'>Delete</button></form> 
                                     </div>
                                 </div>

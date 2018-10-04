@@ -36,8 +36,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/admin', (req, res) => {
-    res.render('adminViews/admin');
+    res.render('adminViews/admin')
 })
+
+
 
 
 app.listen(PORT, function() {

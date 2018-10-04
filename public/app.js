@@ -37,7 +37,7 @@ let addTask=function(){
 	
 	let listItem=createNewTaskElement(taskInput.value);
 	incompleteTaskHolder.appendChild(listItem);
-	bindTaskEvents(listItem, taskCompleted);
+	// bindTaskEvents(listItem, taskCompleted);
 	taskInput.value="";
 
 }
@@ -79,7 +79,7 @@ let deleteTask=function(){
 let taskCompleted=function(){
 	let listItem=this.parentNode;
 	completedTasksHolder.appendChild(listItem);
-				bindTaskEvents(listItem, taskIncomplete);
+	bindTaskEvents(listItem, taskIncomplete);
 
 }
 

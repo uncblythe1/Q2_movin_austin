@@ -36,7 +36,7 @@ router.get('/admin/truck_rentals', (req, res, next) => {
     });
 });
 
-router.get('/admin_trucks/:rental_id', (req, res, next) => {
+router.get('/admin_rentals/:rental_id', (req, res, next) => {
   knex('truck_rentals')
   .where('rental_id',req.params.rental_id)
   .then((trucks) => {
@@ -50,7 +50,7 @@ router.get('/admin_trucks/:rental_id', (req, res, next) => {
   })
 })
 
-router.post('/truck_rentals', (req, res, next) => {
+router.post('/admin/truck_rentals', (req, res, next) => {
 
   knex('truck_rentals')
     .insert({ 
@@ -64,8 +64,8 @@ router.post('/truck_rentals', (req, res, next) => {
     .then(() => {
       knex('truck_rentals')
       .orderBy('rental_id')
-      .then(() => {
-      res.redirect(302, '/userViews/truck_rentals');
+      .then((trucks) => {
+      res.render('adminViews/admin_truck_rentals', {trucks});
     })
   })
     .catch((err) => {
@@ -91,7 +91,7 @@ router.patch('/update_rentals/:rental_id', (req, res, next) => {
         yelpReviews: req.body.yelpReviews }, '*')
         .where('rental_id', req.params.rental_id)
         .then((trucks) => {
-          res.render('userViews/truck_rentals', {trucks});
+          res.render('adminViews/admin_truck_rentals', {trucks});
         })
         .catch((err) => {
           next(err);
@@ -99,7 +99,7 @@ router.patch('/update_rentals/:rental_id', (req, res, next) => {
     })
 });
 
-router.delete('/admin_trucks/:rental_id', function(req, res) {
+router.delete('/truck_rentals/:rental_id', function(req, res) {
   let row;
   knex('truck_rentals')
     .where('rental_id', req.params.rental_id)
