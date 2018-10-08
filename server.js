@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bcrypt = require('bcrypt');
 const knex = require('./db/knex');
 const environment = process.env.NODE_ENV || 'development';
 const ports = {development: 7000, test: 1000};
@@ -24,11 +25,13 @@ let truckRentals = require('./routes/truck_rentals');
 let movingCompanies = require('./routes/moving_companies');
 let supplies = require('./routes/supplies');
 let users = require('./routes/users');
+let yelp = require('./routes/yelp');
 
 app.use(users);
 app.use(truckRentals);
 app.use(movingCompanies);
 app.use(supplies);
+app.use(yelp);
 
 
 app.get('/', (req, res) => {

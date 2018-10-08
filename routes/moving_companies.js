@@ -14,6 +14,7 @@ router.get('/relax', (req, res, next) => {
   res.render('userViews/moving_companies');
 })
 
+
 router.get('/new_company', (req, res, next) => {
   res.render('adminViews/new_company');
 });
